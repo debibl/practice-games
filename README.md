@@ -1,2 +1,2 @@
 # practice-games
-Collection of games for college traineeships
+Collection of games for a college traineeship
