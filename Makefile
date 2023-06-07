@@ -6,3 +6,6 @@ lint:
 
 fix:
 	npx eslint --fix .
+
+pretty:
+	npx prettier --write .
