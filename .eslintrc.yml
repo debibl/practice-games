@@ -6,4 +6,4 @@ overrides: []
 parserOptions:
   ecmaVersion: latest
   sourceType: module
-rules: { no-loop-func: 0 }
+rules: {}
