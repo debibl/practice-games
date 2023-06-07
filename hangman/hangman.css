@@ -6,6 +6,7 @@ body {
   background-color: #1ca9c9;
   color: white;
   transition: all 0.2s ease;
+  cursor: pointer;
 }
 
 .btn-style:hover {
@@ -17,7 +18,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
   margin: 50px auto;
 }
 
