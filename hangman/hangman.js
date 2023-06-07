@@ -23,72 +23,86 @@ let randomWord = '';
 let secretWord = [];
 
 const getRandomLang = () => {
-  const words = programmingLanguages;
-  const randomIndex = Math.floor(Math.random() * words.length);
-  randomWord = words[randomIndex];
-  return randomWord;
+  const randomIndex = Math.floor(Math.random() * programmingLanguages.length);
+  return programmingLanguages[randomIndex];
+};
+
+const updateTaskWord = () => {
+  const taskWord = document.getElementById('taskWord');
+  taskWord.textContent = secretWord.join(' ');
+};
+
+const updateMistakesCount = () => {
+  const mistakesCountElement = document.getElementById('mistakesCount');
+  mistakesCountElement.textContent = mistakesCount.toString();
+};
+
+const updateHangmanPic = () => {
+  document.getElementById('hangmanPic').src = `./img/${mistakesCount}.png`;
+};
+
+const disableLetterButtons = () => {
+  const letterButtons = document.getElementsByClassName('letter');
+  for (let i = 0; i < letterButtons.length; i += 1) {
+    letterButtons[i].disabled = true;
+  }
+};
+
+const handleGameOver = () => {
+  disableLetterButtons();
+
+  const taskWord = document.getElementById('taskWord');
+  taskWord.textContent = randomWord;
+
+  const statusMessage = document.getElementById('statusMessage');
+  statusMessage.textContent = 'GAME OVER!';
+};
+
+const handleCongratulations = () => {
+  disableLetterButtons();
+
+  const statusMessage = document.getElementById('statusMessage');
+  statusMessage.textContent = 'CONGRATULATIONS!';
+};
+
+const handleLetterClick = (event) => {
+  const { target } = event;
+  const letter = target.innerText;
+  const updatedSecretWord = secretWord
+    .map((char, index) => (randomWord[index] === letter ? letter : char));
+
+  let updatedMistakesCount = mistakesCount;
+
+  if (secretWord.join('') === updatedSecretWord.join('')) {
+    updatedMistakesCount += 1;
+  } else {
+    secretWord = updatedSecretWord;
+    updateTaskWord();
+  }
+
+  target.disabled = true;
+  mistakesCount = updatedMistakesCount;
+  updateMistakesCount();
+  updateHangmanPic();
+
+  if (mistakesCount === maxWrong) {
+    handleGameOver();
+  }
+
+  if (secretWord.join('') === randomWord) {
+    handleCongratulations();
+  }
 };
 
 window.onload = () => {
   randomWord = getRandomLang();
   secretWord = Array(randomWord.length).fill('_');
-  const taskWord = document.getElementById('taskWord');
-  taskWord.textContent = secretWord.join(' ');
+  updateTaskWord();
 };
 
 document.addEventListener('DOMContentLoaded', () => {
-  const buttons = document.getElementsByClassName('letter');
-
-  for (let i = 0; i < buttons.length; i += 1) {
-    buttons[i].addEventListener('click', function handleClick(event) {
-      const letter = event.target.innerText;
-      const updatedSecretWord = secretWord.map((char, index) => {
-        if (randomWord[index] === letter) {
-          return letter;
-        }
-        return char;
-      });
-
-      if (secretWord.join('') === updatedSecretWord.join('')) {
-        mistakesCount += 1;
-      } else {
-        secretWord = updatedSecretWord;
-        const taskWord = document.getElementById('taskWord');
-        taskWord.textContent = secretWord.join(' ');
-      }
-
-      this.disabled = true;
-
-      const mistakesCountElement = document.getElementById('mistakesCount');
-      const updateMistakesCount = () => {
-        mistakesCountElement.textContent = mistakesCount.toString();
-      };
-      updateMistakesCount();
-
-      document.getElementById('hangmanPic').src = `./img/${mistakesCount}.png`;
-
-      if (mistakesCount === maxWrong) {
-        const letterButtons = document.getElementsByClassName('letter');
-        for (let j = 0; j < letterButtons.length; j += 1) {
-          letterButtons[j].disabled = true;
-        }
-
-        const taskWord = document.getElementById('taskWord');
-        taskWord.textContent = randomWord;
-
-        const statusMessage = document.getElementById('statusMessage');
-        statusMessage.textContent = 'GAME OVER!';
-      }
-
-      if (secretWord.join('') === randomWord) {
-        const letterButtons = document.getElementsByClassName('letter');
-        for (let j = 0; j < letterButtons.length; j += 1) {
-          letterButtons[j].disabled = true;
-        }
-
-        const statusMessage = document.getElementById('statusMessage');
-        statusMessage.textContent = 'CONGRATULATIONS!';
-      }
-    });
+  const letterButtons = document.getElementsByClassName('letter');
+  for (let i = 0; i < letterButtons.length; i += 1) {
+    letterButtons[i].addEventListener('click', handleLetterClick);
   }
 });
