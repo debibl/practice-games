@@ -1,0 +1,24 @@
+table, 
+td {
+    border: 1px solid #333333;
+    border-collapse: collapse;
+}
+td {
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    color: white;
+}
+sup {
+    /*position: absolute;*/
+    color: #333333;
+}
+td:empty {
+    background: black;
+}
+tbody {
+    text-align: center;
+}
+.highlighted {
+    background-color: gray;
+  }
