@@ -1,0 +1,46 @@
+
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      .game-container {
+        max-width: 400px;
+        margin: 0 auto;
+      }
+
+      #word {
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      #input {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+
+      #submit {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #4caf50;
+        color: #fff;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      }
+
+      #message {
+        text-align: center;
+        margin-top: 10px;
+        font-weight: bold;
+        color: #f44336;
+      }
+ 
