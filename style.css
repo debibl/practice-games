@@ -1,0 +1,188 @@
+@font-face {
+  font-family: "BIGSHOT";
+  src: url("fonts/big-shot.ttf");
+}
+
+body {
+  background-color: #7237db;
+  background-image: url("img/stars.png");
+  background-repeat: repeat;
+  font-family: "BIGSHOT";
+}
+
+.block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.outline {
+  color: #fff;
+  text-shadow:  3px 3px #663399;
+}
+
+#page {
+  background: url("img/background.png") repeat,
+    linear-gradient(180deg, #7237db, #d578d5);
+  margin-top: 10px;
+  margin-bottom: 50px;
+  height: 200em;
+  width: 75em;
+  border: 3px solid #663399;
+  border-radius: 10px;
+  box-shadow: 20px 20px #663399;
+}
+
+header {
+  text-align: center;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.navbar li {
+  width: 150px;
+  float: left;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.navbar li a:hover {
+  color: #d578d5;
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  font-size: 50px;
+  color: white;
+  padding: 5px 10px;
+  letter-spacing: 2px;
+}
+
+.bracket {
+  font-size: 120px;
+  color: white;
+  margin: auto 60px;
+}
+
+.carousel-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel {
+  margin-top: 50px;
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  flex: 0 0 100%;
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+.caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: 18px;
+  text-align: center;
+}
+
+.games-board {
+  background-color: #f29ef2;
+  margin-top: 50px;
+  height: 43em;
+  width: 50em;
+  border-radius: 10px;
+  box-shadow: 20px 20px #663399;
+}
+
+.small-title {
+  font-size: 38px;
+  margin-top: 25px;
+}
+
+.game-card {
+  position: relative;
+  width: 200px;
+  height: 250px;
+  background-color: #f7b9f7;
+  border: 3px solid #663399;
+  border-radius: 20px;
+}
+
+.game-card:hover{
+  background-color: #ffe2fa;
+}
+
+.game-table {
+  margin: -15px;
+  border-collapse: collapse;
+}
+
+.game-table td {
+  padding: 5px 5px;
+}
+
+.game-icon {
+  position: absolute;
+  top: 20px;
+  width: 160px;
+  height: auto;
+}
+
+.game-text {
+  position: absolute;
+  bottom: -12px;
+  font-size: 32px;
+  color: #663399;
+}
+
+.team-line {
+  margin: 80px 0;
+  display: block;
+  height: 240px;
+  width: 100%;
+  background-color: #663399;
+}
+
+.team-line-table {
+  text-align: center;
+  font-family:Verdana, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  color: white;
+  margin: -30px;
+  border-collapse: collapse;
+}
+
+.team-line-table td {
+  padding: 0 80px;
+}
+
+.number {
+  font-size: 50px;
+}
