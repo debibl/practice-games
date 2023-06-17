@@ -3,14 +3,14 @@ body {
 }
 
 .btn-style {
-  background-color: #1ca9c9;
+  background-color: #7237db;
   color: white;
   transition: all 0.2s ease;
   cursor: pointer;
 }
 
 .btn-style:hover {
-  background-color: #a4dce9;
+  background-color: #d578d5;
   color: white;
 }
 
