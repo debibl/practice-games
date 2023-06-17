@@ -1,0 +1,41 @@
+body {
+  padding: 100px 25%;
+}
+
+.btn-style {
+  background-color: #7237db;
+  color: white;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.btn-style:hover {
+  background-color: #d578d5;
+  color: white;
+}
+
+.reset {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+}
+
+.float-right {
+  float: right;
+}
+
+#hangmanPic {
+  margin: 20px;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.letter {
+  margin: 5px;
+}
