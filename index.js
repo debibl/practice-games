@@ -13,3 +13,13 @@ function nextSlide() {
 }
 
 setInterval(nextSlide, 4000);
+
+const links = document.querySelectorAll('a');
+links.forEach((link) => {
+  link.addEventListener('click', function handleSmoothScroll(event) {
+    event.preventDefault();
+    const target = this.getAttribute('href');
+    const targetElement = document.querySelector(target);
+    targetElement.scrollIntoView({ behavior: 'smooth' });
+  });
+});

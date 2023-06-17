@@ -13,8 +13,8 @@
       <header>
         <nav class="navbar block outline">
           <ul>
-            <li><a href="#">Games</a></li>
-            <li><a href="#">Team</a></li>
+            <li><a href="#Games">Games</a></li>
+            <li><a href="#Team">Team</a></li>
           </ul>
         </nav>
         <div class="title-container block outline">
@@ -39,13 +39,13 @@
           </section>
         </article>
 
-        <article class="block">
+        <article id="Games" class="block">
           <section class="games-board">
             <p class="small-title outline block">Games</p>
             <table class="game-table block">
               <tr>
                 <td>
-                  <a href="#">
+                  <a href="hangman/hangman.html">
                   <div class="game-card game-link block">
                     <img class="game-icon" src="img/hangman-icon.png" alt="Hangman Game Icon">
                     <p class="game-text">Hangman</p>
@@ -100,7 +100,7 @@
 
         <article class="block">
           <section class="team-line">
-            <p class="small-title outline block">Team</p>
+            <p id="Team" class="small-title outline block">Team</p>
             <table class="team-line-table block">
               <tr>
                 <td>
@@ -118,58 +118,63 @@
         </article>
 
         <article class="block">
-          <section class="games-board">
-            <p class="small-title outline block">Games</p>
-            <table class="game-table block">
+          <section class="team-board">
+            <table class="team-table block">
               <tr>
                 <td>
-                  <a href="#">
-                  <div class="game-card game-link block">
-                    <img class="game-icon" src="img/hangman-icon.png" alt="Hangman Game Icon">
-                    <p class="game-text">Hangman</p>
+                  <div class="team-card block">
+                    <img class="team-face" 
+                      src="https://crafatar.com/avatars/90999d8afd8e40b7b5e8ccba4ce18eb3?size=512&overlay" 
+                      alt="Face">
+                    <p class="person-name outline">Person</p>
+                    <p class="persons-game outline">game-name</p>
                   </div>
-                  </a>
                 </td>
                 <td>
-                  <a href="#">
-                  <div class="game-card game-link block">
-                    <img class="game-icon" src="img/snake-icon.png" alt="Snake Game Icon">
-                    <p class="game-text">Snake</p>
+                  <div class="team-card block">
+                    <img class="team-face" 
+                      src="https://crafatar.com/avatars/90999d8afd8e40b7b5e8ccba4ce18eb3?size=512&overlay" 
+                      alt="Face">
+                    <p class="person-name outline">Person</p>
+                    <p class="persons-game outline">game-name</p>
                   </div>
-                  </a>
                 </td>
                 <td>
-                  <a href="#">
-                  <div class="game-card game-link block">
-                    <img class="game-icon" style="width: 170px; top: 15px; right: 10px;" src="img/crossword-icon.png" alt="Crossword Game Icon">
-                    <p class="game-text" style="font-size: 28px; bottom: -5px;">Crossword</p>
+                  <div class="team-card block">
+                    <img class="team-face" 
+                      src="https://crafatar.com/avatars/90999d8afd8e40b7b5e8ccba4ce18eb3?size=512&overlay" 
+                      alt="Face">
+                    <p class="person-name outline">Person</p>
+                    <p class="persons-game outline">game-name</p>
                   </div>
-                  </a>
                 </td>
               </tr>
               <td>
-                <a href="#">
-                <div class="game-card game-link block">
-                  <img class="game-icon" style="width: 173px; top: 15px;" src="img/anagramm-icon.png" alt="Anagramm Game Icon">
-                  <p class="game-text" style="bottom: -10px;">Anagramm</p>
+                <div class="team-card block">
+                  <img class="team-face" 
+                    src="https://crafatar.com/avatars/90999d8afd8e40b7b5e8ccba4ce18eb3?size=512&overlay" 
+                    alt="Face">
+                  <p class="person-name outline">Person</p>
+                  <p class="persons-game outline">game-name</p>
                 </div>
-                </a>
               </td>
               <td>
-                <a href="#">
-                <div class="game-card game-link block">
-                  <img class="game-icon" src="img/sudoku-icon.png" alt="Sudoku Game Icon">
-                  <p class="game-text">Sudoku</p>
+                <div class="team-card block">
+                  <img class="team-face" 
+                    src="https://crafatar.com/avatars/90999d8afd8e40b7b5e8ccba4ce18eb3?size=512&overlay" 
+                    alt="Face">
+                  <p class="person-name outline">Person</p>
+                  <p class="persons-game outline">game-name</p>
                 </div>
-                </a>
               </td>
               <td>
-                <a href="#">
-                <div class="game-card game-link block">
-                  <img class="game-icon" src="img/memory-icon.png" alt="Memory Game Icon">
-                  <p class="game-text">Memory</p>
+                <div class="team-card block">
+                  <img class="team-face" 
+                    src="https://crafatar.com/avatars/90999d8afd8e40b7b5e8ccba4ce18eb3?size=512&overlay" 
+                    alt="Face">
+                  <p class="person-name outline">Person</p>
+                  <p class="persons-game outline">game-name</p>
                 </div>
-                </a>
               </td>
               </tr>
             </table>
@@ -178,7 +183,16 @@
 
       </main>
 
-      <footer></footer>
+      <footer>
+        <img class="Kirill" src="https://static.tildacdn.com/tild3639-3936-4338-b039-656263646135/noroot.png" alt="Kirill">
+        <nav class="footer-nav">
+          <ul>
+            <li><a href="#Games">Games</a></li>
+            <li><a href="#Team">Team</a></li>
+          </ul>
+        </nav>
+        <p class="year block">2023</p>
+      </footer>
     </div>
     <script src="index.js"></script>
   </body>
