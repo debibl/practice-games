@@ -16,10 +16,13 @@ setInterval(nextSlide, 4000);
 
 const links = document.querySelectorAll('a');
 links.forEach((link) => {
-  link.addEventListener('click', function handleSmoothScroll(event) {
-    event.preventDefault();
-    const target = this.getAttribute('href');
-    const targetElement = document.querySelector(target);
-    targetElement.scrollIntoView({ behavior: 'smooth' });
-  });
+  const excludedLinks = ['hangman/hangman.html'];
+  if (!excludedLinks.includes(link.getAttribute('href'))) {
+    link.addEventListener('click', function handleSmoothScroll(event) {
+      event.preventDefault();
+      const target = this.getAttribute('href');
+      const targetElement = document.querySelector(target);
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+    });
+  }
 });
