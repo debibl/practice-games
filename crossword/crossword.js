@@ -1,21 +1,48 @@
+const wordsRu = [
+  'строка',
+  'метод',
+  'массив',
+  'переменная',
+  'торвальдс',
+  'граф',
+  'функция',
+  'цикл',
+  'алгоритм',
+];
 
-  const cells = document.querySelectorAll('td');
+const wordsEng = [
+  'string',
+  'method',
+  'array',
+  'variable',
+  'torvalds',
+  'graph',
+  'function',
+  'loop',
+  'algorithm',
+];
 
-  cells.forEach(cell => {
-    cell.addEventListener('click', () => {
-      const row = cell.parentNode.rowIndex;
-      const col = cell.cellIndex;
+const getWordInEng = (answer) => {
+  const index = wordsRu.indexOf(answer);
+  return wordsEng[index];
+};
+/* eslint-disable-next-line */
+const check = () => {
+  const answer = document.querySelector('input').value;
+  const word = getWordInEng(answer);
+  /* eslint-disable-next-line */
+  for (const item of document.querySelectorAll('.words')) {
+    if (item.classList.contains(word)) {
+      item.style = 'visibility: visible';
+    }
+  }
 
-      for (let i = 0; i < cells.length; i++) {
-        if (cells[i].parentNode.rowIndex === row) {
-          cells[i].classList.add('highlighted');
-        }
-      }
-      const highlightedCells = document.querySelectorAll('.highlighted');
-      highlightedCells.forEach(highlightedCell => {
-        if (highlightedCell.parentNode.rowIndex !== row) {
-          highlightedCell.classList.remove('highlighted');
-        }
-      });
-    });
-  });
+  document.querySelector('input').value = '';
+
+  const words = document.querySelectorAll('.words');
+
+  const isAllVisible = Array.from(words).every((cell) => cell.style.visibility === 'visible');
+  if (isAllVisible) {
+    alert('Congratulations!');
+  }
+};
