@@ -6,6 +6,4 @@ overrides: []
 parserOptions:
   ecmaVersion: latest
   sourceType: module
-rules: {
-  no-alert: "off"
-}
+rules: { no-alert: "off" }
