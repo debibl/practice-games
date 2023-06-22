@@ -15,6 +15,7 @@ const programmingLanguages = [
   'PYTHON',
   'VISUALBASIC',
   'JAVASCRIPT',
+  'JAVA',
 ];
 
 let mistakesCount = 0;

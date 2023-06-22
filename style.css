@@ -18,16 +18,19 @@ body {
 
 .outline {
   color: #fff;
-  text-shadow:  3px 3px #663399;
+  text-shadow: 3px 3px #663399;
 }
 
 #page {
-  background: url("img/background.png") repeat,
+  position: relative;
+  background: url("img/background.png") repeat-y,
     linear-gradient(180deg, #7237db, #d578d5);
   margin-top: 10px;
   margin-bottom: 50px;
-  height: 200em;
-  width: 75em;
+  height: 190em;
+  width: 90%;
+  max-width: 80em;
+  min-width: 60em;
   border: 3px solid #663399;
   border-radius: 10px;
   box-shadow: 20px 20px #663399;
@@ -134,7 +137,7 @@ header {
   border-radius: 20px;
 }
 
-.game-card:hover{
+.game-card:hover {
   background-color: #ffe2fa;
 }
 
@@ -162,7 +165,8 @@ header {
 }
 
 .team-line {
-  margin: 80px 0;
+  margin-top: 80px;
+  margin-bottom: 60px;
   display: block;
   height: 240px;
   width: 100%;
@@ -171,7 +175,7 @@ header {
 
 .team-line-table {
   text-align: center;
-  font-family:Verdana, Tahoma, sans-serif;
+  font-family: Verdana, Tahoma, sans-serif;
   font-weight: bold;
   font-size: 25px;
   color: white;
@@ -185,4 +189,93 @@ header {
 
 .number {
   font-size: 50px;
+}
+
+.team-board {
+  background-color: #f29ee7;
+  height: 50em;
+  width: 58em;
+  border-radius: 10px;
+  box-shadow: 20px 20px #663399;
+}
+
+.team-card {
+  position: relative;
+  width: 250px;
+  height: 340px;
+  background: rgb(189, 115, 170);
+  border: 3px solid #663399;
+  border-radius: 20px;
+}
+
+.team-table {
+  margin: 40px;
+  border-collapse: collapse;
+}
+
+.team-table td {
+  padding: 5px 8px;
+}
+
+.team-face {
+  position: absolute;
+  top: 22px;
+  width: 190px;
+  height: 200px;
+  border: 5px solid #ffffff;
+  border-radius: 5px;
+}
+
+.person-name {
+  position: absolute;
+  bottom: 30px;
+  font-size: 30px;
+}
+ .persons-game {
+  position: absolute;
+  bottom: -15px;
+  font-size: 35px;
+ }
+
+ .Kirill {
+  position: absolute;
+  height: 100px;
+  width: auto;
+  bottom: 190px;
+  left: 45%;
+  border: 3px solid #663399;
+ }
+
+.footer-nav {
+  position: absolute;
+  bottom: 120px;
+  left: 40%;
+}
+
+.footer-nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-nav li {
+  width: 150px;
+  float: left;
+}
+
+.footer-nav li a {
+  text-decoration: none;
+  color: #49246e;
+  text-shadow: 2px 2px #ffffff;
+  font-size: 28px;
+}
+
+.footer-nav li a:hover {
+  color: #ff00f2;
+}
+
+.year {
+  margin-top: 425px;
+  font-size: 40px;
+  color: #49246e;
+  text-shadow: 2px 2px 0 #fff;
 }
