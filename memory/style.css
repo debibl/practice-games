@@ -8,6 +8,8 @@ body {
   height: 100vh;
   display: flex;
   background: #f29ef3;
+  background-image: url("img/background.png");
+  background-repeat: repeat;
 }
 
 .gameboard {
