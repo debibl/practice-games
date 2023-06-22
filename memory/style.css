@@ -11,10 +11,11 @@ body {
 }
 
 .gameboard {
-  width: 640px;
-  height: 640px;
+  width: 1050px;
+  height: 700px;
   margin: auto;
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   perspective: 1000px;
 }
