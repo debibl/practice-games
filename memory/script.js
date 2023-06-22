@@ -1,4 +1,4 @@
-const cards = document.querySelectorAll('.memory-card');
+const cards = document.querySelectorAll('.game-card');
 
 let hasFlippedCard = false;
 let lockBoard = false;
@@ -51,7 +51,7 @@ const resetBoard = () => {
 
 (function shuffle() {
   cards.forEach((card) => {
-    const randomPos = Math.floor(Math.random() * 12);
+    const randomPos = Math.floor(Math.random() * 18);
     card.style.order = randomPos;
   });
 }());

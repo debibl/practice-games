@@ -7,10 +7,10 @@
 body {
   height: 100vh;
   display: flex;
-  background: #EE82EE;
+  background: #f29ef3;
 }
 
-.memory-game {
+.gameboard {
   width: 640px;
   height: 640px;
   margin: auto;
@@ -19,7 +19,7 @@ body {
   perspective: 1000px;
 }
 
-.memory-card {
+.game-card {
   width: calc(25% - 10px);
   height: calc(33.333% - 10px);
   margin: 5px;
@@ -29,26 +29,26 @@ body {
   transition: transform .5s;
 }
 
-.memory-card:active {
+.game-card:active {
   transform: scale(0.97);
   transition: transform .2s;
 }
 
-.memory-card.flip {
+.game-card.flip {
   transform: rotateY(180deg);
 }
 
-.front-face,
-.back-face {
+.front,
+.cover {
   width: 100%;
   height: 100%;
   padding: 5px;
   position: absolute;
   border-radius: 5px;
-  background: #ba1ccc;
+  background: #974fd9;
   backface-visibility: hidden;
 }
 
-.front-face {
+.front {
   transform: rotateY(180deg);
 }
