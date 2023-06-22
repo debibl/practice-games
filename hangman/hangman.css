@@ -1,9 +1,29 @@
+@font-face {
+  font-family: "BIGSHOT";
+  src: url("../fonts/big-shot.ttf");
+}
+
+h1 {
+  text-shadow: 3px 3px #663399;
+  color: white;
+}
+
+p {
+  color: #663399;
+}
+
+
 body {
-  padding: 100px 25%;
+  font-family: "BIGSHOT";
+  padding-top: 50px;
+  padding-right: 25%;
+  padding-left: 25%;
+  background-color: #f5c0de;
+  background-image: url(../img/stars.png);
 }
 
 .btn-style {
-  background-color: #7237db;
+  background-color: #663399;
   color: white;
   transition: all 0.2s ease;
   cursor: pointer;
@@ -19,6 +39,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: 50px auto;
+  padding-left: 20px;
 }
 
 .float-right {
@@ -26,7 +47,11 @@ body {
 }
 
 #hangmanPic {
-  margin: 20px;
+  display: flex;
+  margin-top: 45px;
+  margin-bottom: 20px;
+  margin-left: 35%;
+  height: 25em;
 }
 
 #container {
@@ -37,5 +62,9 @@ body {
 }
 
 .letter {
-  margin: 5px;
+  margin: 5px 2px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 19px;
+  padding-right: 15px;
 }
