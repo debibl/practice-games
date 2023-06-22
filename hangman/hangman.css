@@ -23,11 +23,7 @@ body {
 }
 
 .btn-style {
-<<<<<<< HEAD
   background-color: #663399;
-=======
-  background-color: #7237db;
->>>>>>> refs/remotes/origin/debibl
   color: white;
   transition: all 0.2s ease;
   cursor: pointer;
