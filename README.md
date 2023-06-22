@@ -4,7 +4,7 @@
   <img src="/img/logo.png" width="200" alt="Femme FatalERROR team logo"/>
 </p>
 
-Collection of browser games for a college 2023 traineeship made by "Femme FatalERROR" team.
+<p align="center">Collection of browser games for a college 2023 traineeship made by "Femme FatalERROR" team.</p>
 
 ## How to play:
 
