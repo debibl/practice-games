@@ -1,37 +1,79 @@
+      @font-face {
+        font-family: "BIGSHOT";
+        src: url("fonts/big-shot.ttf");
+      }
 
       body {
-        font-family: Arial, sans-serif;
-        margin: 20px;
+        font-family: "BIGSHOT";
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        background-color:#f5c8e1;
+        background-image: url("images/stars.png");
+        background-repeat: repeat;
       }
 
       h1 {
         text-align: center;
+        color: #663399;
+      }
+
+      .image-container {
+        display: inline-block;
+      }
+
+      .image-container img {
+        display: block;
+        margin: 0 auto;
+        width: 300px;
+        height: auto;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+      }
+
+      h2 {
+        text-align: center;
+      } 
+      
+      p {
+        font-size: 20px;
+        font-style: bold;
       }
 
       .game-container {
         max-width: 400px;
         margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
       }
+
 
       #word {
         text-align: center;
-        font-size: 24px;
-        margin-bottom: 10px;
+        color: #f44336;
+        font-size: 30px;
+        font-style: oblique;
+        margin-bottom: 40px;
       }
 
       #input {
-        width: 100%;
+        width: 50%;
         padding: 10px;
         font-size: 16px;
-        margin-bottom: 10px;
+        margin: 0 auto;
+        display: block; 
       }
 
-      #submit {
+      #submit-button {
         display: block;
-        width: 100%;
+        width: 50%;
+        margin: 10px auto;
         padding: 10px;
-        background-color: #4caf50;
-        color: #fff;
+        background-color: #663399;
+        color: #111010;
         font-size: 16px;
         border: none;
         cursor: pointer;

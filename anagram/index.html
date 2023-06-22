@@ -1,16 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Word Jumble Game</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="styles.css">
+    <title>Anagram Game</title>
   </head>
   <body>
-    <h1>Word Jumble Game</h1>
+    <h1>Anagram Game</h1>
+    <div class="image-container">
+      <img src="images/20160221-wgame.jpg" alt="words out of the word pedestrian">
+    </div>
+    <h2>Hi! Welcome to the anagram game!</h2>
+    <p>The rules of the game are very simple: you are given a word from the programming world.</p>
+     <p>Your task is to make at least 5 smaller words out of a given one. 
+    They must make sense!</p>
+   <p>Good luck and thank you for playing!<p>
     <p id="word"></p>
     <input type="text" id="input" placeholder="Enter smaller words">
-    <button id="submit">Submit</button>
+    <button id="submit-button">Submit</button>
     <p id="message"></p>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
     
+    <script src="script.js"></script>
   </body>
 </html>

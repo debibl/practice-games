@@ -1,5 +1,5 @@
 // Array of long words
-const longWords = ['polymorphism', 'encapsulation', 'inheritance'];
+const longWords = ['polymorphism', 'encapsulation', 'inheritance', 'recursion', 'variable', 'algorithm', 'debugging', 'concatenation'];
 
 let currentWordIndex = 0; // Index of the current word in the array
 let correctCount = 0; // Count of correctly guessed words
@@ -33,7 +33,7 @@ function checkWords() {
     // Move to the next word if all words have been guessed correctly
     if (correctCount === longWords.length) {
       document.getElementById('word').textContent = 'Congratulations! You have completed the game.';
-      document.getElementById('submit').disabled = true;
+      document.getElementById('submit-button').disabled = true;
     } else {
       currentWordIndex++;
       setTimeout(() => {
@@ -48,7 +48,7 @@ function checkWords() {
 }
 
 // Event listener for the submit button
-document.getElementById('submit').addEventListener('click', checkWords);
+document.getElementById('submit-button').addEventListener('click', checkWords);
 
 // Initial setup
 displayWord();
