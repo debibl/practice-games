@@ -1,8 +1,25 @@
+@font-face {
+  font-family: "Better VCR";
+  src: url("https://github.com/debibl/practice-games/blob/main/fonts/better-vcr_0.ttf");
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+
+h1 {
+  position: absolute;
+  margin: 56px;
+  padding: auto;
+  writing-mode: vertical-rl; 
+  text-orientation: upright; 
+  justify-content: center;     
+  align-items: center;     
+  text-align: center;  
+  font-size: 46px;
+} 
 
 body {
   height: 100vh;

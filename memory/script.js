@@ -1,3 +1,6 @@
+/* eslint-disable no-param-reassign */
+/* eslint-disable no-unused-expressions */
+/* eslint-disable no-use-before-define */
 const cards = document.querySelectorAll('.game-card');
 
 let hasFlippedCard = false;
@@ -5,32 +8,9 @@ let lockBoard = false;
 let firstCard;
 let secondCard;
 
-const flipCard = () => {
-  if (lockBoard) return;
-  if (this === firstCard) return;
-  this.classList.add('flip');
-
-  if (!hasFlippedCard) {
-    hasFlippedCard = true;
-    firstCard = this;
-    return;
-  }
-
-  secondCard = this;
-  checkForMatch();
-};
-
-const checkForMatch = () => {
-  const isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
-
-  isMatch ? disableCards() : unflipCards();
-};
-
-const disableCards = () => {
-  firstCard.removeEventListener('click', flipCard);
-  secondCard.removeEventListener('click', flipCard);
-
-  resetBoard();
+const resetBoard = () => {
+  [hasFlippedCard, lockBoard] = [false, false];
+  [firstCard, secondCard] = [null, null];
 };
 
 const unflipCards = () => {
@@ -44,15 +24,40 @@ const unflipCards = () => {
   }, 1500);
 };
 
-const resetBoard = () => {
-  [hasFlippedCard, lockBoard] = [false, false];
-  [firstCard, secondCard] = [null, null];
+const disableCards = () => {
+  firstCard.removeEventListener('click', flipCard);
+  secondCard.removeEventListener('click', flipCard);
+
+  resetBoard();
 };
+
+const checkForMatch = () => {
+  const isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
+
+  isMatch ? disableCards() : unflipCards();
+};
+
+function flipCard() {
+  if (lockBoard) return;
+  if (this === firstCard) return;
+
+  this.classList.add('flip');
+
+  if (!hasFlippedCard) {
+    hasFlippedCard = true;
+    firstCard = this;
+
+    return;
+  }
+
+  secondCard = this;
+  checkForMatch();
+}
 
 (function shuffle() {
   cards.forEach((card) => {
-    const randomPos = Math.floor(Math.random() * 18);
-    card.style.order = randomPos;
+    const randomPosition = Math.floor(Math.random() * 18);
+    card.style.order = randomPosition;
   });
 }());
 
