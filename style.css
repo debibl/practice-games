@@ -98,7 +98,7 @@ header {
 
 .slide img {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .caption {
@@ -107,7 +107,7 @@ header {
   left: 0;
   width: 100%;
   padding: 10px;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.6);
   color: white;
   font-family: Verdana, Tahoma, sans-serif;
   font-size: 18px;
@@ -242,14 +242,14 @@ header {
   height: 100px;
   width: auto;
   bottom: 190px;
-  left: 45%;
+  left: 45.5%;
   border: 3px solid #663399;
  }
 
 .footer-nav {
   position: absolute;
   bottom: 120px;
-  left: 40%;
+  left: 41%;
 }
 
 .footer-nav ul {
@@ -274,7 +274,7 @@ header {
 }
 
 .year {
-  margin-top: 425px;
+  margin-top: 350px;
   font-size: 40px;
   color: #49246e;
   text-shadow: 2px 2px 0 #fff;
