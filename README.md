@@ -1,7 +1,7 @@
 # practice-games
 
 <p align="center">
-  <img src="/img/logo.png" width="200" alt="Femme FatalERROR team logo"/>
+  <img src="/img/logo.png" width="300" alt="Femme FatalERROR team logo"/>
 </p>
 
 <p align="center">Collection of browser games for a college 2023 traineeship made by "Femme FatalERROR" team.</p>
