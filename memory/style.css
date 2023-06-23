@@ -1,0 +1,77 @@
+@font-face {
+  font-family: "Better VCR";
+  src: url("https://github.com/debibl/practice-games/blob/main/fonts/better-vcr_0.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  position: absolute;
+  margin: 56px;
+  padding: auto;
+  writing-mode: vertical-rl; 
+  text-orientation: upright; 
+  justify-content: center;     
+  align-items: center;     
+  text-align: center;  
+  font-size: 46px;
+} 
+
+body {
+  height: 100vh;
+  display: flex;
+  background: #f29ef3;
+  background-image: url("img/background.png");
+  background-repeat: repeat;
+}
+
+.gameboard {
+  width: 1050px;
+  height: 700px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  perspective: 1000px;
+}
+
+.game-card {
+  width: calc(16.667% - 10px);
+  height: calc(33.333% - 10px);
+  margin: 5px;
+  position: relative;
+  border: 3px solid #663398;
+  border-radius: 10px;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform .4s;
+  cursor: pointer;
+}
+
+.game-card:active {
+  transform: scale(0.97);
+  transition: transform .2s;
+}
+
+.game-card.flip {
+  transform: rotateY(180deg);
+}
+
+.front,
+.cover {
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  position: absolute;
+  border-radius: 7px;
+  background: #974fd9;
+  backface-visibility: hidden;
+}
+
+.front {
+  transform: rotateY(180deg);
+}

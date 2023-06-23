@@ -231,20 +231,20 @@ header {
   bottom: 30px;
   font-size: 30px;
 }
- .persons-game {
+.persons-game {
   position: absolute;
   bottom: -15px;
   font-size: 35px;
- }
+}
 
- .Kirill {
+.Kirill {
   position: absolute;
   height: 100px;
   width: auto;
   bottom: 190px;
   left: 45.5%;
   border: 3px solid #663399;
- }
+}
 
 .footer-nav {
   position: absolute;
