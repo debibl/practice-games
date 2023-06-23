@@ -28,6 +28,8 @@ made by Dina aka [dinalap](https://github.com/dinalap)
 
 made by Tamara aka [AnitaNuares](https://github.com/AnitaNuares)
 
+<img src="/img/games_preview/preview_memory.png" alt="Memory Game Preview">
+
 ### "Snake"
 
 made by Svetlana aka [pipez1985](https://github.com/pipez1985)
@@ -35,6 +37,8 @@ made by Svetlana aka [pipez1985](https://github.com/pipez1985)
 ### "Annagram"
 
 made by Anastasia aka [AnastasiiaXX](https://github.com/AnastasiiaXX)
+
+<img src="/img/games_preview/preview_anagramm.png" alt="Anagramm Game Preview">
 
 ### "Sudoku"
 
