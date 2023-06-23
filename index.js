@@ -20,6 +20,7 @@ links.forEach((link) => {
     'hangman/hangman.html',
     'crossword/crossword.html',
     'memory/index.html',
+    'anagram/index.html',
   ];
   if (!excludedLinks.includes(link.getAttribute('href'))) {
     link.addEventListener('click', function handleSmoothScroll(event) {
