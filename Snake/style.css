@@ -15,7 +15,7 @@ body{
 }
 
 
-.wrapper {
+.container {
     width: 70vmin;
     height: 70vmin;
     display: flex;
