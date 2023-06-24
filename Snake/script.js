@@ -4,15 +4,19 @@ const scoreElement = document.querySelector(".score");
 const highScoreElement = document.querySelector(".high-score");
 
 
+const gameOverSound = new Audio("./music/gameover.mp3");
+
+
+
 let gameOver = false;
 let foodX, foodY;
-let snakX = 5, snakY = 10;
+let snakX = 13, snakY = 10;
 let snakeBody = [];
 let velocityX = 0, velocityY = 0;
 let setIntervalId;
 let score = 0;
 let highScore = localStorage.getItem("high-score") || 0;
-highScoreElement.innerHTML = `High score: ${highScore}`;
+highScoreElement.innerHTML = `High score: 🏆 ${highScore}`;
 
 
 
@@ -61,9 +65,10 @@ if(snakX === foodX && snakY === foodY) {
     highScore = score >= highScore ? score : highScore;
     localStorage.setItem("high-score", highScore);
 
-    scoreElement.innerHTML =  `Score: ${score}`;
-    highScoreElement.innerHTML = `High Score: ${highScore}`;
-
+    scoreElement.innerHTML =  `Score: ⭐ ${score}`;
+    highScoreElement.innerHTML = `High Score: 🏆 ${highScore}`;
+     
+    gameOverSound.play(); 
 }
 
 
@@ -93,5 +98,5 @@ playBoard.innerHTML = htmlMarkup;
 }
 changFoodPosition();
 //initGame();
-setIntervalId = setInterval (initGame, 123);
+setIntervalId = setInterval (initGame, 200);
 document.addEventListener("keydown", changeDirection);
