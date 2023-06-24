@@ -6,10 +6,13 @@
 }
 
 body{
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    color: #FFFFFF;
     background:  #87CEFA;
     background-image: url("img/background.png");
 }
