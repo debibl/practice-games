@@ -1,0 +1,81 @@
+@font-face {
+    font-family: "BIGSHOT";
+    src: url("fonts/big-shot.ttf");
+  }
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    font-family: "BIGSHOT";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:  #87CEFA;
+    background-image: url("img/background.png");
+}
+
+
+
+h1{
+    font-family: "BIGSHOT";
+    color: #663399;
+    text-shadow: 3px 3px #FFFFFF;
+    font-size: 40px;
+    padding: 5px 10px;
+    letter-spacing: 2px;
+
+}
+
+
+.gameContainer {
+    width: 80vmin;
+    height: 80vmin;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    border-radius: 5px;
+    background:  #4b1581;
+}
+
+.gameDetails {
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 20px 27px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.play-board {
+    width: 100%;
+    height: 100%;
+    background: #663399;
+    display: grid;
+    grid-template: repeat(25, 1fr) / repeat(25, 1fr);
+}
+
+.play-board .food {
+    background: linear-gradient(#cf0a0a, #663399);
+    border: .25vmin solid #000000;
+    border-radius: 5px;
+    
+}
+
+.play-board .head {
+    background: linear-gradient(#00ff00, #FFFF00);
+    border: 2px solid #FFFFFF; 
+    transform: scale(1.02);
+    border-radius: 5px;
+}
+
+
+
