@@ -34,6 +34,8 @@ made by Tamara aka [AnitaNuares](https://github.com/AnitaNuares)
 
 made by Svetlana aka [pipez1985](https://github.com/pipez1985)
 
+<img src="/img/games_preview/preview_snake.png" alt="Snake Game Preview">
+
 ### "Annagram"
 
 made by Anastasia aka [AnastasiiaXX](https://github.com/AnastasiiaXX)
