@@ -2,6 +2,8 @@
 const playBoard = document.querySelector(".play-board");
 const scoreElement = document.querySelector(".score");
 const highScoreElement = document.querySelector(".high-score");
+
+
 let gameOver = false;
 let foodX, foodY;
 let snakX = 5, snakY = 10;
@@ -14,10 +16,11 @@ highScoreElement.innerHTML = `High score: ${highScore}`;
 
 
 
-
+//вызываем еду в случайном месте
 const changFoodPosition = () => {
-    foodX = Math.floor(Math.random() * 30) + 1;
-    foodY = Math.floor(Math.random() * 30) + 1;
+    //floor округление числа
+    foodX = Math.floor(Math.random() * 25) + 1;
+    foodY = Math.floor(Math.random() * 25) + 1;
 }
 
 
@@ -58,7 +61,7 @@ if(snakX === foodX && snakY === foodY) {
     highScore = score >= highScore ? score : highScore;
     localStorage.setItem("high-score", highScore);
 
-    scoreElement.innerHTML =  `${score}`;
+    scoreElement.innerHTML =  `Score: ${score}`;
     highScoreElement.innerHTML = `High Score: ${highScore}`;
 
 }
@@ -73,8 +76,8 @@ snakeBody[0] = [snakX, snakY];
 snakX += velocityX;
 snakY += velocityY;
 
-if(snakX <= 0 || snakX > 30 || snakY <= 0 || snakY > 30) {
-   //console.log('Game Over!'); 
+if(snakX <= 0 || snakX > 25 || snakY <= 0 || snakY > 25) {
+   //console.log('Как то не очень получаеться!'); 
    gameOver = true;
 }
 
