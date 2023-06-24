@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "Better VCR";
-  src: url("https://github.com/debibl/practice-games/blob/main/fonts/better-vcr_0.ttf");
+  font-family: "BIG SHOT"; 
+  src: url("fonts/big-shot.ttf");
 }
 
 * {
@@ -10,6 +10,7 @@
 }
 
 h1 {
+  font-family: "BIG SHOT";
   position: absolute;
   margin: 56px;
   padding: auto;
@@ -19,6 +20,7 @@ h1 {
   align-items: center;     
   text-align: center;  
   font-size: 46px;
+  text-shadow: 3px 3px #663399;
 } 
 
 body {
