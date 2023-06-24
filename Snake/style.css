@@ -4,6 +4,7 @@
   }
 
 
+
 * {
     margin: 0;
     padding: 0;
@@ -62,7 +63,6 @@ h1{
     grid-template: repeat(25, 1fr) / repeat(25, 1fr);
 }
 
-
 .play-board .food {
     background: linear-gradient(#cf0a0a, #663399);
     border: .25vmin solid #000000;
@@ -76,4 +76,6 @@ h1{
     transform: scale(1.02);
     border-radius: 5px;
 }
+
+
 
