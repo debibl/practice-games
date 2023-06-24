@@ -77,7 +77,7 @@ snakX += velocityX;
 snakY += velocityY;
 
 if(snakX <= 0 || snakX > 25 || snakY <= 0 || snakY > 25) {
-   //console.log('Как то не очень получаеться!'); 
+   //console.log('Game Over!'); 
    gameOver = true;
 }
 

@@ -36,8 +36,8 @@ h1{
 
 
 .gameContainer {
-    width: 70vmin;
-    height: 70vmin;
+    width: 80vmin;
+    height: 80vmin;
     display: flex;
     overflow: hidden;
     flex-direction: column;
@@ -62,14 +62,18 @@ h1{
     grid-template: repeat(25, 1fr) / repeat(25, 1fr);
 }
 
+
 .play-board .food {
-    background: #cf0a0a;
+    background: linear-gradient(#cf0a0a, #663399);
+    border: .25vmin solid #000000;
+    border-radius: 5px;
     
 }
 
 .play-board .head {
-    z-index: 5;
-    position: relative;
-    background: #00ff00;
-    box-shadow: 0 0 7px #00ff00, 0 0 20px #00ff00;
+    background: linear-gradient(#00ff00, #FFFF00);
+    border: 2px solid #FFFFFF; 
+    transform: scale(1.02);
+    border-radius: 5px;
 }
+
