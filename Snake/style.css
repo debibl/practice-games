@@ -39,7 +39,7 @@ h1{
     text-align: left;
     width: 400px;
     font-size: 15px;
-    line-height: 1.5;
+    line-height: 1;
     
     background: #a6d7f6;
     position: absolute;
@@ -55,7 +55,7 @@ h1{
     text-align: left;
     font-weight: normal;
     font-size: 20px;
-    line-height: 1.5;
+    line-height: 1;
     font-family: "BIGSHOT";
   } 
 
