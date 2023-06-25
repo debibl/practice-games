@@ -6,18 +6,37 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>SNAKE GAME</h1>
+    <h1>SNAKE 🐍 </h1>
+    
+    <div class="container">
+        <hr>
+    <h2>Правила игры "SNAKE"</h2>
+    <ul>
+        <li>Управление змейкой происходит через клавиши :
+        <ul>
+           <li> left ➡️ </li>
+           <li> Right ⬅️ </li>    
+           <li> Up ⬆️ </li>  
+           <li> Dowt ⬇️ </li> 
+        </ul>   
+        </li> 
+        <li>Когда змейка достигает еды, её длина увеличивается на одну клетку.</li>
+        <li>Когда змейка втыкается в саму себя, вы проигрываете.</li>
+        <li>Достигнув края поля, вы проигрываете.</li>
+        <li>Суть игры увеличить змейку на столько, на сколько это возможно.</li>
+    </ul>
+         <hr>   
+    </div>
+    
     <div class="gameContainer">
         <div class="gameDetails">
         <div class="score">Score: ⭐ 0</div>
         <div class="high-score">High Score: 🏆 30</div>
     </div>
-    <div class="play-board">
-        
-    </div>
+    <div class="play-board"></div>
 
-    </div>
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

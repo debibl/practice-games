@@ -30,7 +30,7 @@ const changFoodPosition = () => {
 
 const handleGameOver = () => {
     clearInterval(setIntervalId);
-    alert ("Game Over!");
+    alert("Привет Филл! Как настроение Филл? Неругай пожалуста Васю Филл! Хорошего дня тебе Филл!");
     location.reload();
 }
 
@@ -82,7 +82,7 @@ snakX += velocityX;
 snakY += velocityY;
 
 if(snakX <= 0 || snakX > 25 || snakY <= 0 || snakY > 25) {
-   //console.log('Game Over!'); 
+   //console.log('Привет Филл! Как настроение Филл? Неругай пожалуста Васю Филл! Хорошего дня тебе Филл!'); 
    gameOver = true;
 }
 

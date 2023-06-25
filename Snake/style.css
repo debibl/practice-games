@@ -1,9 +1,7 @@
 @font-face {
     font-family: "BIGSHOT";
-    src: url("fonts/big-shot.ttf");
+    src: url("../fonts/big-shot.ttf");
   }
-
-
 
 * {
     margin: 0;
@@ -19,7 +17,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background:  #87CEFA;
+    background:  #87CEFA ;
     background-image: url("img/background.png");
 }
 
@@ -27,13 +25,40 @@ body{
 
 h1{
     font-family: "BIGSHOT";
-    color: #663399;
-    text-shadow: 3px 3px #FFFFFF;
+    color:  #FFFFFF;
+    text-shadow: 3px 3px #663399;
     font-size: 40px;
     padding: 5px 10px;
     letter-spacing: 2px;
 
 }
+
+
+.container{
+    padding: 10px 20px;
+    text-align: left;
+    width: 400px;
+    font-size: 15px;
+    line-height: 1.5;
+    
+    background: #a6d7f6;
+    position: absolute;
+    top: 360px;
+    right: 30px;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: "BIGSHOT";
+  }
+
+
+  h2 {
+    text-align: left;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: "BIGSHOT";
+  } 
+
 
 
 .gameContainer {
@@ -64,9 +89,9 @@ h1{
 }
 
 .play-board .food {
-    background: linear-gradient(#cf0a0a, #663399);
-    border: .25vmin solid #000000;
-    border-radius: 5px;
+    background: linear-gradient(#FFFFFF, #cf0a0a);
+    border: .25vmin solid #cf0a0a;
+    border-radius: 15px;
     
 }
 
@@ -75,7 +100,5 @@ h1{
     border: 2px solid #FFFFFF; 
     transform: scale(1.02);
     border-radius: 5px;
+    
 }
-
-
-
