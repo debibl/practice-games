@@ -30,7 +30,7 @@ const changFoodPosition = () => {
 
 const handleGameOver = () => {
     clearInterval(setIntervalId);
-    alert("Привет Филл! Как настроение Филл? Неругай пожалуста Васю Филл! Хорошего дня тебе Филл!");
+    alert("Привет Филл! Как настроение Филл? Неругай пожалуйста Васю...Филл! Хорошего дня тебе Филл!");
     location.reload();
 }
 
