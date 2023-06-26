@@ -36,6 +36,16 @@ body {
   background-repeat: repeat;
 }
 
+.h2 {
+  font-family: "BIG SHOT";
+  margin-bottom: 35px;
+  padding: auto;
+  text-align: center;  
+  font-size: 20px;
+  color: #fff;
+  text-shadow: 3px 3px #663399;
+  }  
+
 .container {
   font-family: "Better VCR"; 
   margin: 88 20;
@@ -50,6 +60,14 @@ body {
   font-weight: normal;
   color: #663398;
   text-shadow: 1px 1px #fff;
+}
+
+.p1 {
+  margin-bottom: 25px;
+}
+
+.p2 {
+  margin-bottom: 25px;
 }
 
 .gameboard {
