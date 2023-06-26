@@ -5,7 +5,7 @@
 body {
     font-family: 'better-vcr_0', sans-serif;
     background-color: #C297F5;
-    background-image: (../img/stars.png);
+    background-image: url(../img/stars.png);
 }
 
 h1 {
