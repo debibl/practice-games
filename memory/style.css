@@ -36,6 +36,22 @@ body {
   background-repeat: repeat;
 }
 
+.container {
+  font-family: "Better VCR"; 
+  margin: 88 20;
+  padding: auto;
+  text-align: left;
+  width: 150px;
+  line-height: 1.4;
+  position: absolute;
+  top: 60px;
+  right: 40px;
+  font-size: 16px;
+  font-weight: normal;
+  color: #663398;
+  text-shadow: 1px 1px #fff;
+}
+
 .gameboard {
   width: 1050px;
   height: 700px;
