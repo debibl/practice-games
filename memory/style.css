@@ -3,6 +3,11 @@
   src: url("fonts/big-shot.ttf");
 }
 
+@font-face {
+  font-family: "Better VCR"; 
+  src: url("fonts/better-vcr_0.ttf");
+}
+
 * {
   padding: 0;
   margin: 0;
