@@ -4,6 +4,8 @@
 }
 body {
     font-family: 'better-vcr_0', sans-serif;
+    background-color: #C297F5;
+    background-image: (../img/stars.png);
 }
 
 h1 {
@@ -20,6 +22,7 @@ table,
 td {
     border: 1px solid #333333;
     border-collapse: collapse;
+    background: #97D3F5;
 }
 
 .table {
@@ -61,6 +64,7 @@ td:empty {
 
 tbody {
     text-align: center;
+    background: white;
 }
 
 input {
