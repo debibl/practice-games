@@ -23,6 +23,7 @@ links.forEach((link) => {
     'memory/index.html',
     'anagram/index.html',
     'Snake/index.html',
+    'sudoku/index.html',
   ];
   if (!excludedLinks.includes(link.getAttribute('href'))) {
     link.addEventListener('click', function handleSmoothScroll(event) {
