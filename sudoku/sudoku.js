@@ -1,5 +1,5 @@
-import { GRID_SIZE, BOX_SIZE } from "./utilities.js";
-import { generateSudoku, findEmptyCell } from "./sudokuGenerator.js";
+import { GRID_SIZE, BOX_SIZE } from './utilities.js';
+import { generateSudoku, findEmptyCell } from './sudokuGenerator.js';
 
 export class Sudoku {
   constructor() {
@@ -7,12 +7,12 @@ export class Sudoku {
   }
 
   getDuplicatePositions(row, column, value) {
-    const duplicatesInColumn = this.getDuplicatePositionsInColumn(row, column, value)
+    const duplicatesInColumn = this.getDuplicatePositionsInColumn(row, column, value);
     const duplicatesInRow = this.getDuplicatePositionsInRow(row, column, value);
     const duplicatesInBox = this.getDuplicatePositionsInBox(row, column, value);
 
     const duplicates = [...duplicatesInColumn, ...duplicatesInRow];
-    duplicatesInBox.forEach(duplicateInBox => {
+    duplicatesInBox.forEach((duplicateInBox) => {
       if (duplicateInBox.row !== row && duplicateInBox.column !== column) duplicates.push(duplicateInBox);
     });
 
