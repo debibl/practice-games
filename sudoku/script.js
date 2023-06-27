@@ -1,5 +1,12 @@
-import { GRID_SIZE, BOX_SIZE, convertPositionToIndex, convertIndexToPosition } from "./utilities.js";
-import { Sudoku } from "./sudoku.js";
+/* eslint-disable no-mixed-operators */
+/* eslint-disable no-loop-func */
+/* eslint-disable radix */
+/* eslint-disable no-plusplus */
+/* eslint-disable no-use-before-define */
+import {
+  GRID_SIZE, BOX_SIZE, convertPositionToIndex, convertIndexToPosition,
+} from './utilities';
+import { Sudoku } from './sudoku';
 
 const sudoku = new Sudoku();
 let cells;
@@ -33,12 +40,12 @@ function fillCells() {
 
 function initCellsEvent() {
   cells.forEach((cell, index) => {
-    cell.addEventListener('click', () => onCellClick(cell, index))
+    cell.addEventListener('click', () => onCellClick(cell, index));
   });
 }
 
 function onCellClick(clickedCell, index) {
-  cells.forEach(cell => cell.classList.remove('highlighted', 'selected', 'error'));
+  cells.forEach((cell) => cell.classList.remove('highlighted', 'selected', 'error'));
 
   if (clickedCell.classList.contains('filled')) {
     selectedCellIndex = null;
@@ -51,7 +58,7 @@ function onCellClick(clickedCell, index) {
   }
 
   if (clickedCell.innerHTML === '') return;
-  cells.forEach(cell => {
+  cells.forEach((cell) => {
     if (cell.innerHTML === clickedCell.innerHTML) cell.classList.add('selected');
   });
 }
@@ -86,7 +93,7 @@ function highlightBoxBy(index) {
 
   for (let iRow = firstRowInBox; iRow < firstRowInBox + BOX_SIZE; iRow++) {
     for (let iColumn = firstColumnInBox; iColumn < firstColumnInBox + BOX_SIZE; iColumn++) {
-      const cellIndex = convertPositionToIndex(iRow, iColumn)
+      const cellIndex = convertPositionToIndex(iRow, iColumn);
       cells[cellIndex].classList.add('highlighted');
     }
   }
@@ -95,7 +102,7 @@ function highlightBoxBy(index) {
 function initNumbers() {
   const numbers = document.querySelectorAll('.number');
   numbers.forEach((number) => {
-    number.addEventListener('click', () => onNumberClick(parseInt(number.innerHTML)))
+    number.addEventListener('click', () => onNumberClick(parseInt(number.innerHTML)));
   });
 }
 
@@ -103,7 +110,7 @@ function onNumberClick(number) {
   if (!selectedCell) return;
   if (selectedCell.classList.contains('filled')) return;
 
-  cells.forEach(cell => cell.classList.remove('error', 'zoom', 'shake', 'selected'));
+  cells.forEach((cell) => cell.classList.remove('error', 'zoom', 'shake', 'selected'));
   selectedCell.classList.add('selected');
   setValueInSelectedCell(number);
 
@@ -125,7 +132,7 @@ function setValueInSelectedCell(value) {
 }
 
 function highlightDuplicates(duplicatesPositions) {
-  duplicatesPositions.forEach(duplicate => {
+  duplicatesPositions.forEach((duplicate) => {
     const index = convertPositionToIndex(duplicate.row, duplicate.column);
     setTimeout(() => cells[index].classList.add('error', 'shake'), 0);
   });
@@ -140,7 +147,7 @@ function onRemoveClick() {
   if (!selectedCell) return;
   if (selectedCell.classList.contains('filled')) return;
 
-  cells.forEach(cell => cell.classList.remove('error', 'zoom', 'shake', 'selected'));
+  cells.forEach((cell) => cell.classList.remove('error', 'zoom', 'shake', 'selected'));
   selectedCell.classList.add('selected');
   const { row, column } = convertIndexToPosition(selectedCellIndex);
   selectedCell.innerHTML = '';
@@ -158,11 +165,11 @@ function initKeyEvent() {
 }
 
 function winAnimation() {
-  cells.forEach(cell => cell.classList.remove('highlighted', 'selected', 'zoom'));
+  cells.forEach((cell) => cell.classList.remove('highlighted', 'selected', 'zoom'));
   cells.forEach((cell, i) => {
     setTimeout(() => cell.classList.add('highlighted', 'zoom'), i * 15);
   });
   for (let i = 1; i < 8; i++) {
-    setTimeout(() => cells.forEach(cell => cell.classList.toggle('highlighted')), 500 + cells.length * 15 + 300 * i);
+    setTimeout(() => cells.forEach((cell) => cell.classList.toggle('highlighted')), 500 + cells.length * 15 + 300 * i);
   }
 }
