@@ -8,6 +8,6 @@ export function convertPositionToIndex(row, column) {
 export function convertIndexToPosition(index) {
   return {
     row: Math.floor(index / GRID_SIZE),
-    column: index % GRID_SIZE
+    column: index % GRID_SIZE,
   };
 }
