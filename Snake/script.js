@@ -68,7 +68,7 @@ const initGame = () => {
     gameOverSound.play();
   }
 
-  for (let i = snakeBody.length - 1; i > 0; i-=1) {
+  for (let i = snakeBody.length - 1; i > 0; i -= 1) {
     snakeBody[i] = snakeBody[i - 1];
   }
 
@@ -82,7 +82,7 @@ const initGame = () => {
     gameOver = true;
   }
 
-  for (let i = 0; i < snakeBody.length; i+=1) {
+  for (let i = 0; i < snakeBody.length; i += 1) {
     htmlMarkup += `<div class="head" style="grid-area: ${snakeBody[i][1]} / ${snakeBody[i][0]}"></div>`;
     if (i !== 0 && snakeBody[0][1] === snakeBody[i][1] && snakeBody[0][0] === snakeBody[i][0]) {
       gameOver = true;
