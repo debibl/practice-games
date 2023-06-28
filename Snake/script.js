@@ -27,7 +27,7 @@ const handleGameOver = () => {
   location.reload();
 };
 
-document.addEventListener('keydown', e => {
+const changeDirection = (e) => {
   if (e.key === 'ArrowUp' && velocityY !== 1) {
     velocityX = 0;
     velocityY -= 1;
@@ -42,7 +42,7 @@ document.addEventListener('keydown', e => {
     velocityY = 0;
   }
   // initGame();
-});
+};
 
 const initGame = () => {
   if (gameOver) return handleGameOver();
@@ -89,3 +89,4 @@ const initGame = () => {
 changFoodPosition();
 // initGame();
 setIntervalId = setInterval(initGame, 200);
+document.addEventListener ('keydown', changeDirection);
