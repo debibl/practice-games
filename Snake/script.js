@@ -2,7 +2,6 @@
 const playBoard = document.querySelector('.play-board');
 const scoreElement = document.querySelector('.score');
 const highScoreElement = document.querySelector('.high-score');
-
 const gameOverSound = new Audio('./music/gameover.mp3');
 
 let gameOver = false;
