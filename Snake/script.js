@@ -6,13 +6,13 @@ const highScoreElement = document.querySelector('.high-score');
 const gameOverSound = new Audio('./music/gameover.mp3');
 
 let gameOver = false;
-let foodX; let
-  foodY;
-let snakX = 13; let
-  snakY = 10;
+let foodX; 
+let foodY;
+let snakX = 13; 
+let snakY = 10;
 const snakeBody = [];
-let velocityX = 0; let
-  velocityY = 0;
+let velocityX = 0; 
+let velocityY = 0;
 let setIntervalId;
 let score = 0;
 let highScore = localStorage.getItem('high-score') || 0;
