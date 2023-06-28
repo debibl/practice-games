@@ -68,7 +68,7 @@ const initGame = () => {
     gameOverSound.play();
   }
 
-  for (let i = snakeBody.length - 1; i > 0; i--) {
+  for (let i = snakeBody.length - 1; i > 0; i-=1) {
     snakeBody[i] = snakeBody[i - 1];
   }
 
