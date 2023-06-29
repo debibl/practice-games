@@ -1,8 +1,4 @@
-/* eslint-disable no-mixed-operators */
-/* eslint-disable no-plusplus */
-/* eslint-disable max-len */
-/* eslint-disable import/prefer-default-export */
-/* eslint-disable import/extensions */
+
 import { GRID_SIZE, BOX_SIZE } from './utilities.js';
 import { generateSudoku, findEmptyCell } from './sudokuGenerator.js';
 

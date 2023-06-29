@@ -1,9 +1,4 @@
-/* eslint-disable import/extensions */
-/* eslint-disable no-mixed-operators */
-/* eslint-disable no-loop-func */
-/* eslint-disable radix */
-/* eslint-disable no-plusplus */
-/* eslint-disable no-use-before-define */
+
 import {
   GRID_SIZE, BOX_SIZE, convertPositionToIndex, convertIndexToPosition,
 } from './utilities.js';

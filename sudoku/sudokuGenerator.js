@@ -1,10 +1,4 @@
-/* eslint-disable no-mixed-operators */
-/* eslint-disable no-param-reassign */
-/* eslint-disable no-continue */
-/* eslint-disable no-plusplus */
-/* eslint-disable consistent-return */
-/* eslint-disable no-use-before-define */
-/* eslint-disable import/extensions */
+
 import { GRID_SIZE, BOX_SIZE } from './utilities.js';
 
 export function generateSudoku() {
