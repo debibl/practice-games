@@ -1,4 +1,3 @@
-
 import {
   GRID_SIZE, BOX_SIZE, convertPositionToIndex, convertIndexToPosition,
 } from './utilities.js';
