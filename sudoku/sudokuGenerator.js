@@ -1,4 +1,3 @@
-
 import { GRID_SIZE, BOX_SIZE } from './utilities.js';
 
 export function generateSudoku() {
