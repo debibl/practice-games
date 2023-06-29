@@ -5,8 +5,8 @@
 /* eslint-disable no-use-before-define */
 import {
   GRID_SIZE, BOX_SIZE, convertPositionToIndex, convertIndexToPosition,
-} from './utilities';
-import { Sudoku } from './sudoku';
+} from './utilities.js';
+import { Sudoku } from './sudoku.js';
 
 const sudoku = new Sudoku();
 let cells;
