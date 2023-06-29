@@ -1,3 +1,4 @@
+/* eslint-disable import/extensions */
 /* eslint-disable no-mixed-operators */
 /* eslint-disable no-loop-func */
 /* eslint-disable radix */
