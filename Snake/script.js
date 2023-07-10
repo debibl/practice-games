@@ -3,7 +3,6 @@ const playBoard = document.querySelector('.play-board');
 const scoreElement = document.querySelector('.score');
 const highScoreElement = document.querySelector('.high-score');
 const gameOverSound = new Audio('./music/gameover.mp3');
-
 let gameOver = false;
 let foodX; let foodY;
 let snakX = 13; let snakY = 10;
@@ -20,13 +19,11 @@ const changFoodPosition = () => {
   foodX = Math.floor(Math.random() * 25) + 1;
   foodY = Math.floor(Math.random() * 25) + 1;
 };
-
 const handleGameOver = () => {
   clearInterval(setIntervalId);
   alert('Привет Филипп! Как настроение Филипп? Не ругай пожалуйста Васю...Филипп! Хорошего дня тебе Филипп!');
   location.reload();
 };
-
 const changeDirection = (e) => {
   if (e.key === 'ArrowUp' && velocityY !== 1){
     velocityX = 0;
@@ -42,7 +39,6 @@ const changeDirection = (e) => {
     velocityY = 0;
   }
 };
-
 const initGame = () => {
   if (gameOver) return handleGameOver();
   let htmlMarkup = `<div class="food" style="grid-area: ${foodY} / ${foodX}"></div>`;
