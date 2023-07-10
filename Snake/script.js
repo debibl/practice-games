@@ -12,7 +12,7 @@ let velocityX = 0; let velocityY = 0;
 let setIntervalId;
 let score = 0;
 let highScore = localStorage.getItem('high-score') || 0;
-highScoreElement.innerHTML = `High score: 🏆 ${highScore}`;
+highScoreElement.innerHTML = `High score:🏆 ${highScore}`;
 
 // вызываем еду в случайном месте
 const changFoodPosition = () => {
@@ -28,20 +28,19 @@ const handleGameOver = () => {
 };
 
 const changeDirection = (e) => {
-  if (e.key === 'ArrowUp' && velocityY !== 1) {
+  if (e.key === 'ArrowUp' && velocityY !== 1){
     velocityX = 0;
     velocityY -= 1;
-  } else if (e.key === 'ArrowDown' && velocityY !== -1) {
+  } else if (e.key === 'ArrowDown' && velocityY !== -1){
     velocityX = 0;
     velocityY = 1;
-  } else if (e.key === 'ArrowLeft' && velocityX !== 1) {
+  } else if (e.key === 'ArrowLeft' && velocityX !== 1){
     velocityX -= 1;
     velocityY = 0;
-  } else if (e.key === 'ArrowRight' && velocityX !== -1) {
+  } else if (e.key === 'ArrowRight' && velocityX !== -1){
     velocityX = 1;
     velocityY = 0;
   }
-  // initGame();
 };
 
 const initGame = () => {
