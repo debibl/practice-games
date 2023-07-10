@@ -45,3 +45,5 @@ made by Anastasia aka [AnastasiiaXX](https://github.com/AnastasiiaXX)
 ### "Sudoku"
 
 made by Lyubov aka [lovepashyan](https://github.com/lovepashyan)
+
+<img src="/img/games_preview/preview_sudoku.png" alt="Sudoku Game Preview">
